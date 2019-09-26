@@ -1,0 +1,20 @@
+@mixin socialMediaImg($offest:  0px) {
+  background:url($socialMediaImg) -38px * $offest 0;
+}
+
+@mixin navbar {
+  height:190px;
+  float:left;
+}
+
+@mixin headers($color, $fnt-wt, $fnt-size, $li-ht: 0) {
+  color: $color;
+  font-weight:$fnt-wt;
+  font-size:$fnt-size;
+  line-height:$li-ht;
+}
+
+@mixin contentStyles($width, $float) {
+  width: $width;
+  float: $float;
+}

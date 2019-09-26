@@ -1,0 +1,31 @@
+/* NAVIGATION */
+figure  {
+  width:400px;
+  background:url($logoImg) no-repeat 0 50px;
+  display:block;
+  margin:0;
+  @include navbar;
+}
+
+nav {
+  @include navbar;
+  width:540px;
+  text-align:right;
+  ul {
+    list-style-type:circle;
+    margin-top:95px;
+    li {
+      display:inline;
+      font-size:0.8em;
+      margin-right:10px;
+      a {
+        color: $red;
+        text-decoration:none;
+        letter-spacing:-0.01em;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

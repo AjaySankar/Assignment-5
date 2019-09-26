@@ -1,0 +1,43 @@
+footer  {
+  width:100%;
+  height:120px;
+  background:#30353D;
+  text-align:center;
+  color:#FFF;
+  padding-top:50px;
+}
+
+.greybar  {
+  width:100%;
+  height:90px;
+  background:#F5F6F6;
+  clear:both;
+  padding-top:30px;
+}
+
+.social-media {
+  margin:0 auto;
+  width:165px;
+  a {
+    display:block;
+    width:36px;
+    height:36px;
+    text-indent:-9999px;
+  }
+  div {
+    float:left;
+    margin-right:5px;
+  }
+  div.one {
+      @include socialMediaImg(0);
+  }
+  div.two {
+      @include socialMediaImg(1);
+  }
+  div.three {
+      @include socialMediaImg(2);
+  }
+  div.four {
+      @include socialMediaImg(3);
+  }
+}
