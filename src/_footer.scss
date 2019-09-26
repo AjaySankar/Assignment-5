@@ -2,13 +2,13 @@ footer  {
   @include wt_and_ht(100%, 120px);
   background:#30353D;
   text-align:center;
-  color:#FFF;
+  color:$white;
   padding-top:50px;
 }
 
 .greybar  {
   @include wt_and_ht(100%, 90px);
-  background:#F5F6F6;
+  background:$graybarBg;
   clear:both;
   padding-top:30px;
 }

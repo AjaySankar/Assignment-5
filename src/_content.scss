@@ -1,6 +1,6 @@
 #headline { 
   @include wt_and_ht(100%, 130px);
-  background:#F25C43;
+  background:$headlineBg;
   text-align:center;
   margin:0 auto
 }
