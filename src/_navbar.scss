@@ -4,11 +4,11 @@ figure  {
   background:url($logoImg) no-repeat 0 50px;
   display:block;
   margin:0;
-  @include navbar;
+  @include navbar(400px, 190px, left);
 }
 
 nav {
-  @include navbar;
+  @include navbar(540px, 190px, left);
   width:540px;
   text-align:right;
   ul {

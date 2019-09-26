@@ -1,10 +1,15 @@
+@mixin wt_and_ht($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 @mixin socialMediaImg($offest:  0px) {
   background:url($socialMediaImg) -38px * $offest 0;
 }
 
-@mixin navbar {
-  height:190px;
-  float:left;
+@mixin navbar($width, $height, $float) {
+  @include wt_and_ht($width, $height);
+  float: $float;
 }
 
 @mixin headers($color, $fnt-wt, $fnt-size, $li-ht: 0) {

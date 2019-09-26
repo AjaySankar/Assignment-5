@@ -17,10 +17,12 @@ figure {
   background: url("../images/logo.png") no-repeat 0 50px;
   display: block;
   margin: 0;
+  width: 400px;
   height: 190px;
   float: left; }
 
 nav {
+  width: 540px;
   height: 190px;
   float: left;
   width: 540px;
@@ -123,9 +125,9 @@ footer {
   width: 165px; }
   .social-media a {
     display: block;
+    text-indent: -9999px;
     width: 36px;
-    height: 36px;
-    text-indent: -9999px; }
+    height: 36px; }
   .social-media div {
     float: left;
     margin-right: 5px; }

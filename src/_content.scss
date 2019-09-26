@@ -1,6 +1,5 @@
-#headline {
-  width:100%;
-  height:130px;
+#headline { 
+  @include wt_and_ht(100%, 130px);
   background:#F25C43;
   text-align:center;
   margin:0 auto
