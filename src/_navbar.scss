@@ -1,15 +1,28 @@
 /* NAVIGATION */
 figure  {
-  width:400px;
   background:url($logoImg) no-repeat 0 50px;
   display:block;
   margin:0;
   @include navbar(400px, 190px, left);
+  @include getMediaQuery(959px) {
+    @include navbar(inherit, 140px, none);
+    background-position:center;
+  }
+  @include getMediaQuery(459px) {
+    background-size:contain;
+    height:100px;
+  }
 }
 
 nav {
   @include navbar(540px, 190px, left);
-  width:540px;
+  @include getMediaQuery(959px) {
+    @include navbar(inherit, 50px, none);
+    text-align:center;
+  }
+  @include getMediaQuery(459px) {
+    margin-bottom:40px !important;
+  }
   text-align:right;
   ul {
     list-style-type:circle;
@@ -26,6 +39,17 @@ nav {
           color: $white;
         }
       }
+      @include getMediaQuery(959px) {
+        font-size:1em;
+        margin:0 10px;
+      }
+      @include getMediaQuery(767px) {
+        font-size:0.8em;
+        margin:0 5px;
+      }  
+    }
+    @include getMediaQuery(959px) {
+      margin-top:0;
     }
   }
 }

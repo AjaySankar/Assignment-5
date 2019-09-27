@@ -11,4 +11,19 @@ main  {
   width:940px;
   margin:0 auto;
   padding:0 10px;
+  @include getMediaQuery(959px) {
+    width:768px;
+  }
+  @include getMediaQuery(767px) {
+    width:460px;
+  }
+  @include getMediaQuery(459px) {
+    width:300px;
+  }
+}
+
+section {
+  @include getMediaQuery(459px) {
+    width:95%;
+  }
 }

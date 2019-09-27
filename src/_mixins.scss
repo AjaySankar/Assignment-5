@@ -23,3 +23,11 @@
   width: $width;
   float: $float;
 }
+
+@mixin getMediaQuery($args) {
+  @if length($args) == 1 {
+    @media (max-width: nth($args, 1)) {
+      @content;
+    }
+  }
+}

@@ -4,13 +4,13 @@ footer  {
   text-align:center;
   color:$white;
   padding-top:50px;
-}
-
-.greybar  {
-  @include wt_and_ht(100%, 90px);
-  background:$graybarBg;
-  clear:both;
-  padding-top:30px;
+  @include getMediaQuery(459px) {
+    text-align:center;
+  }
+  > p, > img {
+    float:none;
+    margin:0;
+  }
 }
 
 .social-media {
