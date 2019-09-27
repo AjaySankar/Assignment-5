@@ -63,20 +63,17 @@
   }
 }
 
-article {
-  img {
-    @include getMediaQuery(459px) {
-      display:none;
-    }
-  }
-}
-
 .greybar  {
   @include wt_and_ht(100%, 90px);
   background:$graybarBg;
   clear:both;
   padding-top:30px;
-  @include getMediaQuery(459px) {
-    display:none;
+}
+
+body {
+  > #content article img, >  .greybar{
+    @include getMediaQuery(659px) {
+      display:none;
+    }
   }
 }
