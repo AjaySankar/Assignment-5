@@ -24,7 +24,7 @@
   float: $float;
 }
 
-@mixin getMediaQuery($args) {
+@mixin insertMediaQuery($args) {
   @if length($args) == 1 {
     @media (max-width: nth($args, 1)) {
       @content;

@@ -4,7 +4,7 @@ footer  {
   text-align:center;
   color:$white;
   padding-top:50px;
-  @include getMediaQuery(459px) {
+  @include insertMediaQuery(459px) {
     text-align:center;
   }
   > p, > img {

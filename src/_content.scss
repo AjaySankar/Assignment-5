@@ -8,11 +8,11 @@
     font-size:2.5em;
     font-weight:100;
     padding-top:50px;
-    @include getMediaQuery(767px) {
+    @include insertMediaQuery(767px) {
       font-size:2em;
       padding-top:50px;
     }
-    @include getMediaQuery(459px) {
+    @include insertMediaQuery(459px) {
       font-size:1.5em;
       padding-top:30px;
     }
@@ -26,7 +26,7 @@
     color:$gray;
     font-size:2em;
     font-weight:400;
-    @include getMediaQuery(459px) {
+    @include insertMediaQuery(459px) {
       font-size:1.6em;
     }
   }
@@ -46,16 +46,16 @@
   #testimonials {
     @include contentStyles(460px, right);
   }
-  @include getMediaQuery(959px) {
+  @include insertMediaQuery(959px) {
     width:inherit;
   }
   > #testimonials, > #products {
-    @include getMediaQuery(959px) {
+    @include insertMediaQuery(959px) {
       width:46%;
       margin:0 2%;
     }
 
-    @include getMediaQuery(767px) {
+    @include insertMediaQuery(767px) {
       width:96%;
       margin:0 2%;
       float:none;
@@ -72,7 +72,7 @@
 
 body {
   > #content article img, >  .greybar{
-    @include getMediaQuery(659px) {
+    @include insertMediaQuery(659px) {
       display:none;
     }
   }
